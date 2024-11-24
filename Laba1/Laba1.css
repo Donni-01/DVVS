@@ -1,0 +1,175 @@
+/* Загальні налаштування */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+  }
+  
+  a {
+    color: #007acc;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  h1, h2, h3, h4 {
+    margin: 0 0 10px;
+  }
+  
+  h1 {
+    font-size: 2.5em;
+    font-weight: 700;
+  }
+  
+  h2 {
+    font-size: 2em;
+    color: #444;
+  }
+  
+  h3 {
+    font-size: 1.5em;
+    color: #555;
+  }
+  
+  h4 {
+    font-size: 1.2em;
+    font-weight: 700;
+    color: #666;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  /* Контейнер */
+  .main {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .main-content {
+    flex: 2;
+    padding-right: 20px;
+  }
+  
+  .sidebar {
+    flex: 1;
+    max-width: 300px;
+  }
+  
+  /* Про користувача */
+  .aboutUser {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .about-position {
+    color: #007acc;
+    font-weight: 700;
+  }
+  
+  .about-name {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  .about-description {
+    font-size: 1em;
+    color: #666;
+  }
+  
+  /* Проекти */
+  .projects {
+    margin-bottom: 30px;
+  }
+  
+  .project-list {
+    padding-left: 20px;
+  }
+  
+  .project-item {
+    margin-bottom: 10px;
+  }
+  
+  .project-link {
+    font-weight: bold;
+    color: #007acc;
+  }
+  
+  .projects-bracket {
+    font-weight: bold;
+    color: #999;
+  }
+  
+  /* Робота */
+  .work .job {
+    margin-bottom: 20px;
+  }
+  
+  .work .job h4 {
+    font-size: 1.2em;
+    color: #007acc;
+  }
+  
+  .organization {
+    font-weight: normal;
+    color: #555;
+  }
+  
+  .work ul {
+    margin-left: 20px;
+  }
+  
+  /* Освіта */
+  .education {
+    margin-bottom: 30px;
+  }
+  
+  .education span {
+    font-weight: bold;
+  }
+  
+  /* Бокова панель */
+  .sidebar {
+    background: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .user-photo {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  
+  .contacts, .tech-skills, .soft-skills {
+    margin-bottom: 30px;
+  }
+  
+  .contacts p, .tech-skills ul, .soft-skills ul {
+    margin: 5px 0;
+  }
+  
+  .contacts span {
+    font-weight: bold;
+    color: #444;
+  }
+  
+  .tech-skills ul, .soft-skills ul {
+    padding-left: 20px;
+  }
+  
+  .tech-skills li, .soft-skills li {
+    margin-bottom: 10px;
+  }
+  

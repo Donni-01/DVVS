@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Blog</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <div id="auth" style="display: block;">
+        <h2>Authentication</h2>
+        <form id="authForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" required>
+            <button type="button" onclick="login()">Login</button>
+            <p>Don't have an account? <a href="#" onclick="showRegister()">Register</a></p>
+        </form>
+        <form id="registerForm" style="display: none;">
+            <h2>Register</h2>
+            <label for="regUsername">Username:</label>
+            <input type="text" id="regUsername" required>
+            <label for="regPassword">Password:</label>
+            <input type="password" id="regPassword" required>
+            <label for="regEmail">Email:</label>
+            <input type="email" id="regEmail" required>
+            <button type="button" onclick="register()">Register</button>
+            <p>Already have an account? <a href="#" onclick="showLogin()">Login</a></p>
+        </form>
+    </div>
+    <div id="app" style="display: none;">
+        <h1>Post Blog</h1>
+        <form id="postForm">
+            <input type="hidden" id="postId" value="">
+            <label for="title">Title:</label>
+            <input type="text" id="title" placeholder="Enter post title" required>
+            <label for="description">Description:</label>
+            <textarea id="description" placeholder="Enter description" required></textarea>
+            <label for="author">Author:</label>
+            <input type="text" id="author" placeholder="Enter author's name" required>
+            <button type="submit">Save Post</button>
+        </form>
+        <h2>Posts</h2>
+        <ul id="posts"></ul>
+        <button onclick="logout()">Logout</button>
+    </div>
+    <script src="Client.js"></script>
+</body>
+</html>
